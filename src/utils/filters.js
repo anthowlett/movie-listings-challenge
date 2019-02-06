@@ -16,9 +16,14 @@ export const sortMoviesByPopularity = (movies) =>
   movies.concat().sort(sortByPopularity);
 
 /**
- * Apply filters to movies
+ * Sort and filter movies
  * @param  {object} state
  * @return {array<object>}
  */
-export const filterMovies = (state) => 
-  sortMoviesByPopularity(state);
+export const filterMovies = (state) => {
+  let movies = state.movies.results;
+  
+  movies = sortMoviesByPopularity(movies);
+
+  return movies;
+}
