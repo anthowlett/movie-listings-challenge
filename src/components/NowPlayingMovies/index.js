@@ -12,7 +12,7 @@ class NowPlayingMovies extends Component {
       <Container>
         {
           !movies.length ?
-            <Message>Sorry, we've got nothing :(</Message> : 
+            <Message>Sorry friend, we've got nothing :(</Message> : 
             movies.map((item) => (
               <Movie key={ item.id } data={ item } genres={ genres } />
             ))
@@ -24,7 +24,7 @@ class NowPlayingMovies extends Component {
 
 const mapStateToProps = (state) => ({
 	genres: state.genres.list,
-	movies: filters.filterMovies(state.movies.results)
+	movies: filters.filterMovies(state)
 });
 
 NowPlayingMovies.propTypes = {
