@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { loadData } from '../../actions';
-import Filters from '../../components/Filters';
-import NowPlayingMovies from '../../components/NowPlayingMovies';
 
 class App extends Component {
   componentDidMount() {
@@ -17,8 +15,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Filters />
-        <NowPlayingMovies />
+        <p>Loaded.</p>
       </div>
     );
   }
