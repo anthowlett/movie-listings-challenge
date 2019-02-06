@@ -62,6 +62,16 @@ export const moviesLoaded = (movies) => {
 }
 
 /**
+ * Rating action creators
+ */
+export const setMinRating = (rating) => {
+  return ({
+    type: types.SET_MIN_RATING,
+    rating
+  })
+}
+
+/**
  * Wrapper action creator
  */
 export const loadData = () => {
