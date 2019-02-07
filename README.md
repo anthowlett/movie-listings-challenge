@@ -2,7 +2,7 @@
 
 A demo application built to meet the requirements of [Zone Digital's technical test](https://zone.github.io/frontend/movie-listing).
 
-https://anthowlett.github.io/movie-listings-challenge/
+https://zd-movie-listings-challenge.netlify.com/
 
 I used [Create React App](https://github.com/facebook/create-react-app) as a starting point and looked to create an enjoyable user experience while maintaining code simplicity and efficiency. The state is managed using [Redux](https://redux.js.org/) and [Redux Thunk](https://github.com/reduxjs/redux-thunk) as middleware. I also used [styled-components](styled-components.com) to provide a SASS like syntax for styling UI elements. This repository has been configured with a [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) structure for easy collaboration.
 
