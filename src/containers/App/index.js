@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import styled from 'styled-components';
 import { loadData } from '../../actions';
 import Filters from '../../components/Filters';
 import NowPlayingMovies from '../../components/NowPlayingMovies';
+
+const Loading = styled.p`
+  padding: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  width: 100%;
+`;
 
 class App extends Component {
   componentDidMount() {
@@ -12,7 +21,7 @@ class App extends Component {
 
   render() {
     if (!this.props.loaded) {
-      return <p>Just a little longer...</p>
+      return <Loading>Just a little longer...</Loading>
     }
 
     return (

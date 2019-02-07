@@ -3,16 +3,17 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { setMinRating } from '../../actions';
 import Range from './Range';
+import { RatingWrapper } from './styles';
 
 class RatingFilter extends Component {
   render() {
 		const { minRating, onSetMinRating } = this.props;
 		
     return (
-      <div>
+      <RatingWrapper>
 				<h3>Rating: {minRating}</h3>
 				<Range value={minRating} onChange={onSetMinRating} />
-			</div>
+			</RatingWrapper>
     );
   }
 }
