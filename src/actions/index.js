@@ -41,6 +41,14 @@ export const genresLoaded = (list) => {
   })
 }
 
+export const filterGenres = (id, value) => {
+  return ({
+    type: types.FILTER_GENRES,
+    id,
+	  value
+  })
+}
+
 /**
  * Movie action creators
  */
