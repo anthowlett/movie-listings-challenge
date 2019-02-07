@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 // Styles
 const ImageHolder = styled.div`
-  img {
-    display: block;
-    max-width: 100%;
-  }
+  background: #000 url('imgs/cover-placeholder.gif') no-repeat top center;
+  background-size: cover;
+  border: 1px solid #222;
+`;
+
+const Cover = styled.div`
+  padding-bottom: 150%;
+  ${props => props.bg && css`
+    background: transparent url(${props.bg}) no-repeat top center;
+  `};
+  background-size: cover;
 `;
 
 class Image extends Component {
@@ -23,7 +30,7 @@ class Image extends Component {
       
       return (
         <ImageHolder>
-          <img src={src} title={this.props.title} alt={this.props.alt} />
+          <Cover bg={src} />
         </ImageHolder>
       );
     }
