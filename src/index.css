@@ -1,11 +1,38 @@
+/** 
+* Basic Reset CSS
+**/
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Noto+Sans');
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font:  normal 16px/1.2 'Noto Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+}
+
+h1, h2, h3 {
+  margin: 10px 0;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+a, button {
+	border: 0;
+	cursor: pointer;
+}
+
+a:focus,
+button:focus,
+select:focus,
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+svg {
+	display: block;
 }
 
 code {

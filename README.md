@@ -1,3 +1,45 @@
+# Movie Listings Challenge
+
+A demo application built to meet the requirements of [Zone Digital's technical test](https://zone.github.io/frontend/movie-listing).
+
+https://anthowlett.github.io/movie-listings-challenge/
+
+I used [Create React App](https://github.com/facebook/create-react-app) as a starting point and looked to create an enjoyable user experience while maintaining code simplicity and efficiency. The state is managed using [Redux](https://redux.js.org/) and [Redux Thunk](https://github.com/reduxjs/redux-thunk) as middleware. I also used [styled-components](styled-components.com) to provide a SASS like syntax for styling UI elements. This repository has been configured with a [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) structure for easy collaboration.
+
+## Prerequisites
+
+* [NodeJS](https://nodejs.org/en/)
+* [NPM](https://docs.npmjs.com/cli/install)
+
+## NPM packages
+
+* axios (^0.18.0)
+* react (^16.7.0)
+* react-dom (^16.7.0)
+* react-redux (^6.0.0)
+* react-scripts (2.1.3)
+* redux (^4.0.1)
+* redux-thunk (^2.3.0)
+* styled-components (^4.1.3)
+
+* enzyme (^3.8.0)
+* enzyme-adapter-react-16 (^1.9.1)
+* redux-mock-store (^1.5.3)
+
+## Getting started
+
+1. Clone this repository to your local machine
+
+2. Install dependencies
+
+	- `npm i`
+
+2. Start up development environment
+
+	- `npm start`
+
+## Create React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -42,27 +84,3 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
