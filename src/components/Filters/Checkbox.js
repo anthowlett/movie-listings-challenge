@@ -1,5 +1,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { colors } from '../../utils';
+
+const Wrapper = styled.span`
+  input {
+    opacity: 0;
+    position: absolute; 
+  }
+
+  label {
+    display: inline-block;
+    position: relative;
+    margin: 10px 5px;
+    padding: 7px;
+    vertical-align: middle;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: background-color 0.25s;
+    border-radius: 5px;
+  }
+
+  input:checked + label {
+    color: white;
+    background-color: ${colors.green};
+    border-color: green;
+  }
+`;
 
 const Checkbox = ({
 	id,
@@ -7,16 +35,17 @@ const Checkbox = ({
 	checked,
 	onChange
 }) => (
-  <label>
+  <Wrapper>
     <input
+      id={id}
       type='checkbox'
       name='list'
       value={id}
       checked={checked}
       onChange={(e) => onChange(parseInt(e.target.value), e.target.checked)}
     />
-    {name}
-  </label>
+    <label htmlFor={id}>{name}</label>
+  </Wrapper>
 );
 
 Checkbox.propTypes = {
