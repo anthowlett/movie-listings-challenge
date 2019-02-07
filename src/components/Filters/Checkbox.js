@@ -12,7 +12,7 @@ const Wrapper = styled.span`
   label {
     display: inline-block;
     position: relative;
-    margin: 10px 5px;
+    margin: 0 5px 10px;
     padding: 7px;
     vertical-align: middle;
     font-size: 14px;

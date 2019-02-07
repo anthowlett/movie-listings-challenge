@@ -11,7 +11,7 @@ const Checklist = ({
   <div>
     {
       !list.length ? 
-        <Message>Opps, no filters to show</Message> : 
+        <Message>Opps! No movies means no filters :/</Message> : 
         list
           .sort((a, b) => a.name.localeCompare(b.name))
           .map((item) => {

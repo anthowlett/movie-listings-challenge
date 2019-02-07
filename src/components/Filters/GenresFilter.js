@@ -10,7 +10,7 @@ class GenresFilter extends Component {
 		const { genres, selected, onChange } = this.props;
     return (
       <div>
-				<h3>Genres:</h3>
+				<p>Select genres:</p>
 				<Checklist list={genres} checked={selected} onChange={onChange} />
 			</div>
     );
