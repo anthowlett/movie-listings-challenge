@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Checkbox from './Checkbox';
+import { Message } from './styles';
 
 const Checklist = ({
 	list,
@@ -9,13 +10,15 @@ const Checklist = ({
 }) => (
   <div>
     {
-      list
-        .sort((a, b) => a.name.localeCompare(b.name))
-        .map((item) => {
-          return (
-            <Checkbox key={item.id} id={item.id} name={item.name} checked={checked.includes(item.id)} onChange={onChange} />
-          );
-        })
+      !list.length ? 
+        <Message>Opps, no filters to show</Message> : 
+        list
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map((item) => {
+            return (
+              <Checkbox key={item.id} id={item.id} name={item.name} checked={checked.includes(item.id)} onChange={onChange} />
+            );
+          })
     }
   </div>
 );
