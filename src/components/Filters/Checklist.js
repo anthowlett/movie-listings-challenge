@@ -24,9 +24,9 @@ const Checklist = ({
 );
 
 Checklist.propTypes = {
-    list: PropTypes.array.isRequired,
-    checked: PropTypes.array.isRequired,
-    onChange: PropTypes.func.isRequired
+  list: PropTypes.array.isRequired,
+  checked: PropTypes.array.isRequired,
+  onChange: PropTypes.func.isRequired
 };
 
 export default Checklist;

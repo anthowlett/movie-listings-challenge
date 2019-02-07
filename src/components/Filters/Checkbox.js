@@ -49,10 +49,10 @@ const Checkbox = ({
 );
 
 Checkbox.propTypes = {
-    id: PropTypes.number.isRequired,
-    name: PropTypes.string.isRequired,
-    checked: PropTypes.bool.isRequired,
-    onChange: PropTypes.func.isRequired
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  checked: PropTypes.bool.isRequired,
+  onChange: PropTypes.func.isRequired
 };
 
 export default Checkbox;
