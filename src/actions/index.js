@@ -41,6 +41,14 @@ export const genresLoaded = (list) => {
   })
 }
 
+export const filterGenres = (id, value) => {
+  return ({
+    type: types.FILTER_GENRES,
+    id,
+	  value
+  })
+}
+
 /**
  * Movie action creators
  */
@@ -58,6 +66,16 @@ export const moviesLoaded = (movies) => {
   return ({
     type: types.MOVIES_LOADED,
     movies
+  })
+}
+
+/**
+ * Rating action creators
+ */
+export const setMinRating = (rating) => {
+  return ({
+    type: types.SET_MIN_RATING,
+    rating
   })
 }
 
