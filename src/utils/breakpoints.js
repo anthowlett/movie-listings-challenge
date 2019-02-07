@@ -1,7 +1,7 @@
 /**
  * Breakpoints
  * ----------
- * responsive css breakpoints
+ * Responsive CSS breakpoints
  */
 
 export const minWidths = {

@@ -12,12 +12,13 @@ class App extends Component {
   }
 
   render() {
+    // Display preloader while API calls complete
     if (!this.props.loaded) {
       return <Loader />
     }
 
     return (
-      <div className="App">
+      <div id="App">
         <Filters />
         <NowPlayingMovies />
       </div>

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { colors } from '../../utils';
 
+// Styles
 const Wrapper = styled.span`
   input {
     opacity: 0;

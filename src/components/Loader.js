@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 /**
- * Provided by https://loading.io/css/
+ * CSS Provided by https://loading.io/css/
  */
 
 const Wrapper = styled.div`

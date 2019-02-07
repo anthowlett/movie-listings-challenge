@@ -1,7 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Checkbox from './Checkbox';
-import { Message } from './styles';
+import styled from 'styled-components';
+import { colors } from '../../utils';
+
+// Styles
+const Message = styled.p`
+  padding: 5px;
+  color: red;
+  background-color: ${colors.black_5};
+`;
 
 const Checklist = ({
 	list,

@@ -1,4 +1,10 @@
 /**
+ * Filters
+ * ----------
+ * Reusable helper methods for filtering API data
+ */
+
+/**
  * Sort movies by popularity 
  * @param  {object} a
  * @param  {object} b
