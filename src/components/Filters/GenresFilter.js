@@ -11,7 +11,6 @@ class GenresFilter extends Component {
     return (
       <div>
 				<h3>Genres:</h3>
-				{console.log(selected)}
 				<Checklist list={genres} checked={selected} onChange={onChange} />
 			</div>
     );

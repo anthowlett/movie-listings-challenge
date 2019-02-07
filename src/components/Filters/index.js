@@ -7,7 +7,6 @@ class Filters extends Component {
   render() {
     return (
       <Wrapper>
-        Filters:
         <RatingFilter />
         <GenresFilter />
       </Wrapper>
