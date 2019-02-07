@@ -12,8 +12,8 @@ const Movie = ({
 		<MovieDetails>
 			<h2>{data.title}</h2>
 			<div>
-				<h3>Rated <span>{data.vote_average}</span> / 10</h3>
-				<h3>Popularity <span>{Math.round(data.popularity)}</span></h3>
+				<p>Rated <strong>{data.vote_average}</strong> / 10</p>
+				<p>Popularity <strong>{Math.round(data.popularity)}</strong></p>
         <ul>
           {
             genres

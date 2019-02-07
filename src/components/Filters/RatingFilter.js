@@ -10,7 +10,7 @@ const RatingWrapper = styled.div`
 	text-align: center;
 	
   ${breakpoints.small(`
-    padding-right: 20px;
+    padding-right: 40px;
   `)};
 `;
 
