@@ -1,30 +1,39 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import { filterGenres } from '../actions';
-import store from '../store';
+import renderer from 'react-test-renderer';
 import Checkbox from '../components/Filters/Checkbox';
 import '../setupTests';
 
-describe('<Checkbox />', () => {
-  describe('onChange()', () => {
+describe('Filters', () => {
 
-    test('Checkbox is checked after click', () => {
-      const mockOnChange = jest.fn();
-      const mockEvent = { 
-        target: {
-          value: 1, 
-          checked: true
-        } 
-      };
-      const checkbox = shallow(
-        <Checkbox key={1} id={1} name='item' checked={false} onChange={mockOnChange} />
-      );
-      const input = checkbox.find('input');
+  describe('<Checkbox />', () => {
+    const id = 1;
+    const name = 'Genre name';
+    const onChange = jest.fn();
+    const checked = false;
+    const component = <Checkbox key={id} id={id} name={name} checked={checked} onChange={onChange} />
+    const tree = renderer.create(component).toJSON();
 
-      expect(input.prop('checked')).toBe(false);
-      input.simulate('change', mockEvent);
-      //expect(store.dispatch).toHaveBeenCalledWith(filterGenres());
+    it('should render', () => {
+      expect(tree)
+        .toMatchSnapshot();
     });
 
+    it('should contain an input', () => {
+      expect(tree.children.map(child => child.type))
+        .toContain('input');
+    });
+
+    it('should contain a label', () => {
+      expect(tree.children.map(child => child.type))
+        .toContain('label');
+    });
+
+    it('label should contain text', () => {
+      const label = tree.children.filter(child => child.type === 'label')[0];
+      expect(label.children[0]).toEqual(
+        expect.stringMatching(name)
+      );
+    });
   });
+
 });

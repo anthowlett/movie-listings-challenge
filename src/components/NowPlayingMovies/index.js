@@ -24,6 +24,7 @@ export const Message = styled.p`
 class NowPlayingMovies extends Component {
   render() {
     const { movies, genres } = this.props;
+    
     return (
       <Container>
         {

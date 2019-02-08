@@ -8,6 +8,7 @@ import Checklist from './Checklist';
 class GenresFilter extends Component {
 	render() {
 		const { genres, selected, onChange } = this.props;
+		
     return (
       <div>
 				<p>Select genres:</p>
