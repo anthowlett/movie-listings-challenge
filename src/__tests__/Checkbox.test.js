@@ -30,9 +30,10 @@ describe('Filters', () => {
 
     it('label should contain text', () => {
       const label = tree.children.filter(child => child.type === 'label')[0];
-      expect(label.children[0]).toEqual(
-        expect.stringMatching(name)
-      );
+      expect(label.children[0])
+        .toEqual(
+          expect.stringMatching(name)
+        );
     });
   });
 
