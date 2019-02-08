@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NowPlayingMovies <Movie /> should render 1`] = `
+"<styled.div>
+  <Connect(Image) name={[undefined]} alt=\\"Aquaman\\" />
+  <styled.div>
+    <h2>
+      Aquaman
+    </h2>
+    <div>
+      <p>
+        Rated 
+        <strong />
+         / 10
+      </p>
+      <p>
+        Popularity 
+        <strong>
+          200
+        </strong>
+      </p>
+      <ul>
+        <li>
+          Action
+        </li>
+        <li>
+          Adventure
+        </li>
+        <li>
+          Animation
+        </li>
+      </ul>
+    </div>
+  </styled.div>
+</styled.div>"
+`;

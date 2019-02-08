@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NowPlayingMovies <Image /> should render 1`] = `
+.c0 {
+  background: #000 none no-repeat top center;
+  background-image: url('imgs/cover-placeholder.gif');
+  background-size: cover;
+  border: 1px solid #222;
+}
+
+.c1 {
+  padding-bottom: 150%;
+  background: transparent none no-repeat top center;
+  background-image: url(https://image.tmdb.org/t/p/w500/5A2bMlLfJrAfX9bqAibOL2gCruF.jpg);
+  background-size: cover;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  />
+</div>
+`;

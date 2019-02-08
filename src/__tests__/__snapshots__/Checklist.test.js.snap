@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filters <Checklist /> should render 1`] = `
+.c0 input {
+  opacity: 0;
+  position: absolute;
+}
+
+.c0 label {
+  display: inline-block;
+  position: relative;
+  margin: 0 5px 10px;
+  padding: 7px;
+  vertical-align: middle;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid black;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+  border-radius: 5px;
+}
+
+.c0 input:checked + label {
+  color: white;
+  background-color: #00A14D;
+  border-color: green;
+}
+
+<div>
+  <span
+    className="c0"
+  >
+    <input
+      checked={false}
+      id={28}
+      name="list"
+      onChange={[Function]}
+      type="checkbox"
+      value={28}
+    />
+    <label
+      htmlFor={28}
+    >
+      Action
+    </label>
+  </span>
+  <span
+    className="c0"
+  >
+    <input
+      checked={true}
+      id={12}
+      name="list"
+      onChange={[Function]}
+      type="checkbox"
+      value={12}
+    />
+    <label
+      htmlFor={12}
+    >
+      Adventure
+    </label>
+  </span>
+  <span
+    className="c0"
+  >
+    <input
+      checked={true}
+      id={16}
+      name="list"
+      onChange={[Function]}
+      type="checkbox"
+      value={16}
+    />
+    <label
+      htmlFor={16}
+    >
+      Animation
+    </label>
+  </span>
+</div>
+`;
