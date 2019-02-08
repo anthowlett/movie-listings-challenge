@@ -5,7 +5,8 @@ import styled, { css } from 'styled-components';
 
 // Styles
 const ImageHolder = styled.div`
-  background: #000 url('imgs/cover-placeholder.gif') no-repeat top center;
+  background: #000 none no-repeat top center;
+  background-image: url('imgs/cover-placeholder.gif');
   background-size: cover;
   border: 1px solid #222;
 `;
@@ -13,12 +14,13 @@ const ImageHolder = styled.div`
 const Cover = styled.div`
   padding-bottom: 150%;
   ${props => props.bg && css`
-    background: transparent url(${props.bg}) no-repeat top center;
+    background: transparent none no-repeat top center;
+    background-image: url(${props.bg});
   `};
   background-size: cover;
 `;
 
-class Image extends Component {
+export class Image extends Component {
     getImageSrc(name, base, size) {
       return base + size + name;
     }

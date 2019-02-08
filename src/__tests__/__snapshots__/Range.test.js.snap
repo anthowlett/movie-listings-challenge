@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filters <Range /> should render 1`] = `
+<input
+  max={10}
+  min={0}
+  onChange={[Function]}
+  step={0.5}
+  type="range"
+  value={3}
+/>
+`;

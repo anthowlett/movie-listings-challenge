@@ -9,6 +9,7 @@ const initial = {
 const reducer = (state = initial, action) => {
   switch (action.type) {
     case types.GENRES_LOADED:
+      console.log(action.list);
       return {
         ...state,
         loaded: true,
